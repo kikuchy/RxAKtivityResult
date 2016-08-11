@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity(), RxAKtivityResult by RxAKtivityResultDe
                 isOk().
                 isRequestOf(REQUEST).
                 subscribe {
-                    val (requestCode, resutlCode, data) = it
+                    val (requestCode, resultCode, data) = it
                     textView.text = data.getStringExtra(NextActivity.ARG1)
                 }
     }
