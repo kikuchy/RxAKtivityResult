@@ -1,7 +1,4 @@
-# RxAKtivityResult
-
-[![](https://jitpack.io/v/kikuchy/RxAKtivityResult.svg)](https://jitpack.io/#kikuchy/RxAKtivityResult)
-
+# RxAKtivityResult [![](https://jitpack.io/v/kikuchy/RxAKtivityResult.svg)](https://jitpack.io/#kikuchy/RxAKtivityResult) [![Build Status](https://travis-ci.org/kikuchy/RxAKtivityResult.svg?branch=master)](https://travis-ci.org/kikuchy/RxAKtivityResult)
 
 ## Usage
 
