@@ -7,7 +7,7 @@ class MainActivity : AppCompatActivity(), RxAKtivityResult by RxAKtivityResultDe
     override fun onCreate(savedInstanceState: Bundle?) {
         activityResultObservable.
             subscribe {
-                val (requestCode, resutlCode, data) = it
+                val (requestCode, resultCode, data) = it
                 doSomething(data);
             }
     }
@@ -18,6 +18,14 @@ class MainActivity : AppCompatActivity(), RxAKtivityResult by RxAKtivityResultDe
     }
 }
 ```
+
+
+## Feature
+
+* You can recieve `onActivityResult` 's result code and datas from `Observable`
+* You don't have to be afraid (memory) leaking Activity without unsubscribing
+* Easy to install your existing codes
+
 
 ## Install
 
