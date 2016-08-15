@@ -15,7 +15,7 @@ interface RxAKtivityResult {
     /**
      * Call this method from implement class's same name method.
      */
-    fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
+    fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         activityResultObservable.onNext(ActivityResult(requestCode, resultCode, data))
     }
 }

@@ -28,11 +28,11 @@ class MainActivity : AppCompatActivity(), RxAKtivityResult by RxAKtivityResultDe
                 isRequestOf(REQUEST).
                 subscribe {
                     val (requestCode, resultCode, data) = it
-                    textView.text = data.getStringExtra(NextActivity.ARG1)
+                    textView.text = data?.getStringExtra(NextActivity.ARG1)
                 }
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super<AppCompatActivity>.onActivityResult(requestCode, resultCode, data)
         super<RxAKtivityResult>.onActivityResult(requestCode, resultCode, data)
     }
